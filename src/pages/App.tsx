@@ -34,17 +34,23 @@ function App() {
   }
 
   return (
-    <div className={style.AppStyle}>
-      <Formulario setTarefas={setTarefas} />
-      <Lista
-        tarefas={tarefas}
-        selecionaTarefa={selecionaTarefa}
-      />
-      <Cronometro
-        selecionado={selecionado}
-        finalizarTarefa={finalizarTarefa}
-      />
-    </div>
+    <>
+      <div className={style.AppStyle}>
+        
+
+        <Formulario setTarefas={setTarefas} />
+        <Lista
+          tarefas={tarefas}
+          selecionaTarefa={selecionaTarefa}
+        />
+        <Cronometro
+          selecionado={selecionado}
+          finalizarTarefa={finalizarTarefa}
+        />
+      </div>
+    
+    </>
+
   );
 }
 
